@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Product Page Template</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+          <div class="jumbotron">
+            <h1 class="text-center">Recipe Name</h1>
+            <h4 class="text-center">Recipe author</h4><p class="text-center">100 likes</p>
+            <img src="../images/1200X400.gif" alt="" class="img-fluid"> 
+			<p class="text-center">Ready in 45 minutes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis accusamus praesentium eveniet ad unde doloremque ex officia eius ab quibusdam.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, mollitia natus amet eligendi consequuntur. Veritatis ullam debitis voluptas repellat laboriosam.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2> Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, error, itaque non vel architecto ratione obcaecati doloribus delectus illum harum?</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, nam voluptate accusantium nulla distinctio odit aliquam voluptatem ab. Earum.</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="../images/600X300.gif" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Feature</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, at.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="../images/600X300.gif" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Feature</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, at.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © MyWebsite. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap-4.4.1.js"></script>
+    <script>
+	  const apiurl = 'https://api.spoonacular.com/recipes/random'
+	  var recipe = $.getJSON(apiurl, {
+		  apiKey: "267c967d36a444a3bc78f446f43ff8a8"
+	  })
+	  console.log(recipe);
+	</script>
+  </body>
+</html>

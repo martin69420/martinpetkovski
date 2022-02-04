@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>martin petkovski</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TF92LGDJJQ"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TF92LGDJJQ');
+    </script>
+  </head>
+  <body>
+	  <div id="zonewarning" class="alert alert-warning alert-dismissible position-fixed" role="alert" style="display:none;z-index:999;">
+			<strong>the zone</strong> is under construction.
+		    <button type="button" class="close" onclick="$(this).parent().slideUp();" aria-label="close">
+               <span aria-hidden="true">&times;</span>
+            </button>
+		</div>
+		<div id="learnwarning" class="alert alert-danger alert-dismissible position-fixed" role="alert" style="display:none;z-index:999;">
+			you have been deemed: <strong>unworthy.</strong>
+		    <button type="button" class="close" onclick="$(this).parent().slideUp();" aria-label="close">
+               <span aria-hidden="true">&times;</span>
+            </button>
+		</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">the one and only martin petkovski website</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="http://penis.africa">penis.africa</a>
+              <a class="dropdown-item" href="https://www.youtube.com/channel/UCOi8H0xhpkyj5OHlRfYueCw">martin hallam</a>
+              <a class="dropdown-item" href="http://penis.africa/conlang/conlang.html">avarmiša</a>
+			  <a class="dropdown-item" href="https://frogbaseball.itch.io">frog baseball</a>
+			  <a class="dropdown-item" href="http://penis.africa/trivia/trivia.html">trivia</a>
+			  <a class="dropdown-item" href="https://soundcloud.com/goyinterior">goy inside</a>
+            </div>
+          </li>
+        </ul>
+          <button class="btn btn-outline-success my-2 my-sm-0" onclick="warningopen(zonewarning)" role="button">enter the zone</button>
+      </div>
+    </nav>
+    <section>
+      <div class="jumbotron text-center mt-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1>piss warrior centrale</h1>
+              <p>many goyim approach. are you among them?</p>
+              <p><a class="btn btn-primary btn-lg" onclick="warningopen(learnwarning)" role="button">learn more »</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>my projects</h1>
+            <p>all mine 100% mine no one helped nope no one else</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-md-6 col-12 text-center">
+            <img class="img-fluid" src="images/penisafrica.png" style="height:400px;width:400px;" alt="the holiday moaner">
+            <h4>penis.africa</h4>
+            <h6>the worst website in the cyber realm</h6>
+			<a class="btn btn-primary" href="http://penis.africa" role="button">visit »</a>
+			  </div>
+          <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+            <img class="img-fluid" src="images/martinhallam.jpg" alt="marcus altas found dead">
+            <h4>martin hallam</h4>
+            <h6>the scoundrel's choice</h6>
+			  <a class="btn btn-primary" href="https://www.youtube.com/channel/UCOi8H0xhpkyj5OHlRfYueCw" role="button">visit »</a>
+          </div>
+        </div>
+		<div class="row mt-3">
+          <div class="col-md-6 col-12 text-center">
+            <img class="img-fluid" src="images/avarmisa.png" alt="blue boat">
+            <h4>avarmiša</h4>
+            <h6>a language for silly little garbage men</h6>
+			  <a class="btn btn-primary" href="http://martinpetkovski.com/avarmisa" role="button">visit »</a>
+          </div>
+          <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+            <img class="img-fluid" src="images/frogbaseball.png" alt="mitch nolan opening a door">
+            <h4>frog baseball</h4>
+            <h6>video "games" made by morons for nobody</h6>
+			  <a class="btn btn-primary" href="http://frogbaseball.itch.io">visit »</a>
+          </div>
+        </div>
+		  <div class="row mt-3">
+			  <div class="col text-center mt-md-0 mt-2">
+            <img class="img-fluid" src="images/trivia.jpg" alt="question man">
+            <h4>trivia</h4>
+            <h6>test your knowledge of really specific game facts</h6>
+			  <a class="btn btn-primary" href="http://penis.africa/trivia/trivia.html">visit »</a>
+              </div>
+			  <div class="col text-center mt-md-0 mt-2">
+            <img class="img-fluid" src="images/goyinside.png" alt="auditory shitposts vol. 1 album cover">
+            <h4>goy inside</h4>
+            <h6>ear screeching horror</h6>
+			  <a class="btn btn-primary" href="https://soundcloud.com/goyinterior">visit »</a>
+              </div>
+		  </div>
+      </div>
+    </section>
+    <hr>
+    <hr>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <h3 class="text-center">what i am</h3>
+            <p>i went to school for one day only; the 17th of february, 2009. for some reason, on that day only, i decided to give school a shot. boy did i regret it. i lost <i>at least</i> 2 of my legs just on the way there</p>
+          </div>
+          <div class="col-md-4 col-12">
+            <h3 class="text-center">get in touch</h3>
+            <address class="text-center">
+            <strong>via divination:</strong>
+				<p>as of 2021, gyromancy only</p>
+			<strong>via email:</strong>
+				<p>petkovskimartin20@gmail.com</p>
+            </address>
+          </div>
+          <div class="col-md-4 col-12">
+			  <h3 class="text-center">my fish of the day</h3>
+			  <h1 class="text-center align-middle" id="fishOTD">no fish today, sorry</h1>
+		    <script>   
+						function warningopen(x) {
+							$(x).slideDown();
+						}
+				       const fish = ["trout", "cod", "salmon", "bonefish", "assfish", "bream", "waterfish", "dogfish", "catfish", "shark", "whale", "seaman", "coolfish", "tuna", "mackerel", "sardine", "turtle", "seal", "shrimp", "plankton", "robofish", "squirrel", "crab", "sea sponge", "lobster", "starfish", "sturgeon", "goldfish", "dooger", "stupidfish", "blobfish", "clownfish", "clam"];
+				       const random = Math.floor(Math.random() * fish.length);
+				       $('#fishOTD').html(fish[random]);
+			</script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>copyright © martin petkovski, 2022. all rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
